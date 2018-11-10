@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Jumbotron from '../../components/Jumbotron/Jumbotron';
+import { NavLink } from 'react-router-dom';
 import './home.css';
 
 class Home extends Component {
@@ -44,8 +45,17 @@ class Home extends Component {
             </p>
           </div>
         </div>
-        <a href='/in-home-training'>MORE INFO</a>
+        {/* <div className='more-info'> */}
+        <NavLink className='more-info' to='/in-home-training'>
+          <span className='more-info-text'> MORE INFO</span>
+        </NavLink>
+        {/* </div> */}
         <hr />
+        <p className='testimonial'>
+          “Nosework was a great way for my dog to get out all that excess energy
+          after the baby was born when we weren’t able to take our usual long
+          walks.” - Tony’s Mom
+        </p>
       </div>
     );
   }
