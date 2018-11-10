@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 20px;
+}
+
+li a {
+    color: #999;
+    text-decoration: none;
+}

@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Footer = (props) => {
-    return ( 
-        <nav>
-        Hi
-        </nav>
-     );
+    return (<h1>footer</h1>);
 }
- 
+
 export default Footer;
