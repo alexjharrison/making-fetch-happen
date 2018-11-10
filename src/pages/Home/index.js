@@ -19,7 +19,7 @@ class Home extends Component {
         <div className='cards'>
           <div className='nosework'>
             <h2>Nosework</h2>
-            <img src='img/dane.jpg' alt='great dane' />
+            <img src={'img/dane.jpg'} alt='great dane' />
             <p>
               Nosework is a canine sport created to mimic professional detection
               dog tasks (drugs, bomb detection), and is quickly gaining
@@ -28,7 +28,7 @@ class Home extends Component {
           </div>
           <div className='obedience'>
             <h2>Obedience</h2>
-            <img src='img/sniff.jpg' alt='great dane' />
+            <img src={'img/sniff.jpg'} alt='great dane' />
             <p>
               Does your dog exhibit behaviors that you’d like to change?
               Obedience is a fun way to bond with your dog, and can help you
@@ -37,7 +37,7 @@ class Home extends Component {
           </div>
           <div className='puppy'>
             <h2>Puppy</h2>
-            <img src='img/puppies.jpg' alt='great dane' />
+            <img src={'img/puppies.jpg'} alt='great dane' />
             <p>
               There’s so much information out there on how to raise a puppy
               right, and it can be overwhelming. We’ll work together to create

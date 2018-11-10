@@ -13,8 +13,8 @@ const Footer = props => {
       </div>
       <p>© 2018</p>
       <div className='footer-images'>
-        <img src='img/kennelpro.jpg' alt='kennel-pro' />
-        <img src='img/iaabc.jpg' alt='iaabc' />
+        <img src={'img/kennelpro.jpg'} alt='kennel-pro' />
+        <img src={'img/iaabc.jpg'} alt='iaabc' />
       </div>
     </div>
   );
