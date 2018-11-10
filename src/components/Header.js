@@ -8,10 +8,10 @@ const Header = ({ pageName }) => {
             <Link to="/"><h1>logo goes here</h1></Link>
             <nav>
                 <ul>
-                    <li><Link to="/">IN-HOME TRAINING</Link></li>
-                    <li><Link to="/">REGISTER</Link></li>
-                    <li><Link to="/">ABOUT</Link></li>
-                    <li><Link to="/">CONTACT</Link></li>
+                    <li><Link to="/in-home-training">IN-HOME TRAINING</Link></li>
+                    <li><Link to="/register">REGISTER</Link></li>
+                    <li><Link to="/about">ABOUT</Link></li>
+                    <li><Link to="/contact">CONTACT</Link></li>
                 </ul>
             </nav>
         </div>

@@ -8,12 +8,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <React.Fragment>
+        <React.Fragment>
+          <Router>
             <Header />
+
             {/* <Footer /> */}
-          </React.Fragment>
-        </Router>
+
+          </Router>
+        </React.Fragment>
       </div>
     );
   }
