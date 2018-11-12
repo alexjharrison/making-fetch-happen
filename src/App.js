@@ -14,12 +14,12 @@ class App extends Component {
       <div className='App'>
         <Header />
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/home' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/in-home-training' component={Training} />
           <Route exact path='/contact' component={Contact} />
-          <Route path='/' component={Four04} />
+          <Route path='/home' component={Four04} />
         </Switch>
         <Footer />
       </div>
