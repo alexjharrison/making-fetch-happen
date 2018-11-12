@@ -34,9 +34,11 @@ li a {
 .active {
   background-color: purple;
   border-radius: 5px;
+  transition: background-color 1s;
 }
 .active a {
   color: white;
+  transition: color 2s;
 }
 
 .not-active a:hover {
