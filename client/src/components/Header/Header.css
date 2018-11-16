@@ -1,14 +1,14 @@
 .header {
   display: flex;
   max-width: 1024px;
-  /* margin: 0 auto; */
   height: 100px;
   align-items: center;
   justify-content: space-between;
   font-weight: 600;
   letter-spacing: 0.1em;
   font-size: 14px;
-  margin: 10px 20px;
+  /* margin: 10px 20px; */
+  margin: 10px auto;
 }
 
 ul {
