@@ -18,6 +18,7 @@
   font-weight: 400;
   text-align: justify;
   line-height: 1.4;
+  letter-spacing: 0.1px;
 }
 .cards img {
   width: 270px;

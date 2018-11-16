@@ -1,0 +1,9 @@
+.about {
+  display: flex;
+}
+
+.about-photo {
+  width: 50%;
+  height: auto;
+  padding: 30px;
+}
