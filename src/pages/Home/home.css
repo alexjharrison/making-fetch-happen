@@ -20,8 +20,8 @@
   line-height: 1.4;
 }
 .cards img {
-  width: 300px;
-  height: 250px;
+  width: 270px;
+  height: 240px;
   object-fit: cover;
   margin: 20px 0;
   border-radius: 8px;
@@ -33,16 +33,16 @@
 }
 
 .nosework {
-  max-width: 300px;
-  padding: 10px;
+  max-width: 270px;
+  padding: 5px;
 }
 .obedience {
-  max-width: 300px;
-  padding: 10px;
+  max-width: 270px;
+  padding: 5px;
 }
 .puppy {
-  max-width: 300px;
-  padding: 10px;
+  max-width: 270px;
+  padding: 5px;
 }
 /* .more-info {
   display: flex;
@@ -85,6 +85,45 @@ hr {
   width: 50%;
   margin: 100px auto;
 }
+blockquote {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px 5px 10px;
+  padding: 0.5em 10px;
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+.slide {
+  background: #fff !important;
+}
+.author {
+  font-size: 30px;
+  font-weight: 200;
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  float: right;
+  padding: 0 10px;
+  margin: 0;
+}
+.presentation-mode {
+  margin: 20px;
+  max-width: 1000px;
+  margin: 10px auto;
+}
 
 @media only screen and (max-width: 800px) {
   .headline {
@@ -92,5 +131,44 @@ hr {
   }
   .testimonial {
     width: 90%;
+  }
+  blockquote {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .nosework {
+    max-width: none;
+    width: 80%;
+  }
+  .obedience {
+    max-width: none;
+    width: 80%;
+  }
+  .puppy {
+    max-width: none;
+    width: 80%;
+  }
+  .cards img {
+    width: 80vw;
+    height: calc(80vw * 0.833);
+  }
+}
+@media only screen and (max-width: 660px) {
+  .nosework {
+    max-width: none;
+    width: 80%;
+  }
+  .obedience {
+    max-width: none;
+    width: 80%;
+  }
+  .puppy {
+    max-width: none;
+    width: 80%;
+  }
+  .cards img {
+    width: 80vw;
+    height: calc(80vw * 0.833);
   }
 }

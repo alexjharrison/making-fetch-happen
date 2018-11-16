@@ -5,7 +5,7 @@ import './Header.css';
 const Header = ({ pageName }) => {
   return (
     <div className='header'>
-      <Link to='/making-fetch-happen'>
+      <Link to='/'>
         <img className='logo' src={'img/fetch_purple.png'} alt='site logo' />
       </Link>
       <nav>
