@@ -3,7 +3,7 @@ import './Jumbotron.css';
 
 const Jumbotron = props => {
   return (
-    <div className='jumbotron'>
+    <div className='jumbotron '>
       <header>
         <div className='jumbotext'>
           <h1>{props.text}</h1>

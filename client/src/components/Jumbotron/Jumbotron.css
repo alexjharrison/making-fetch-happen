@@ -36,11 +36,13 @@ header {
     object-fit: scale-down;
   }
   .jumbotron {
+    width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  header {
-    height: auto;
-  }
+
   .jumbotext h1 {
     font-size: 80px;
   }

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import Jumbotron from '../../components/Jumbotron/Jumbotron';
+import './Training.css';
 
 class Training extends Component {
   state = {};
   render() {
-    return <h1>Training</h1>;
+    return <Jumbotron text='In-Home Training' img={'img/puppies.jpg'} />;
   }
 }
 
