@@ -57,6 +57,7 @@ class Home extends Component {
         </NavLink>
         {/* </div> */}
         <hr />
+        <h1 className='testimonials'>Testimonials</h1>
         <Carousel
           showThumbs={false}
           showStatus={false}
