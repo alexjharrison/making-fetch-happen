@@ -28,7 +28,7 @@ class About extends Component {
               in love with training and behavior. Over the next three years, I
               traveled around the country, attending as many classes and
               seminars as I could from the greats including,{' '}
-              <a href='http://www.behaviorworks.org/'>Dr. Susan Friedman</a>,
+              <a href='http://www.behaviorworks.org/'>Dr. Susan Friedman</a>,{' '}
               <a href='http://animalbehaviorclinic.net/'>Dr. Chris Pachel</a>,
               Ken Ramierz, and many more. I also completed the Applied Behavior
               Analysis curriculum through the Florida Institute of Technology (a
@@ -56,7 +56,7 @@ class About extends Component {
                 {' '}
                 Karen Pryor Academy
               </a>
-              . I’m also a supporting member of the
+              . I’m also a supporting member of the{' '}
               <a href='http://iaabc.org/'>IAABC</a>.
             </p>
             <p className='about-text'>
