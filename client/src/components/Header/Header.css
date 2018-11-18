@@ -32,7 +32,7 @@ li a {
 }
 
 .active {
-  background-color: purple;
+  background-color: #662D91;
   border-radius: 5px;
   transition: background-color 1s;
 }

@@ -11,8 +11,8 @@
 .jumbotext {
   text-align: center;
   color: white;
-  text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple,
-    1px 1px 0 purple;
+  text-shadow: -1px -1px 0 #662D91, 1px -1px 0 #662D91, -1px 1px 0 #662D91,
+    1px 1px 0 #662D91;
 }
 .jumbotext h1 {
   font-size: 80px;
