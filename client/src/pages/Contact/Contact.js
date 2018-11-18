@@ -19,9 +19,21 @@ class Contact extends Component {
     })
       .then((res, status) => {
         console.log(res, status);
+        this.setState({ email: '', message: '' });
+        const sent = document.getElementById('sent');
+        sent.className = 'active';
+        setTimeout(() => {
+          sent.className = 'inactive';
+        }, 4000);
       })
       .catch(err => {
         console.log(err);
+        this.setState({ email: '', message: '' });
+        const sent = document.getElementById('sent');
+        sent.className = 'active';
+        setTimeout(() => {
+          sent.className = 'inactive';
+        }, 4000);
       });
   };
   render() {
@@ -42,6 +54,9 @@ class Contact extends Component {
           </div>
           <img src='img/fetch_black.png' alt='logo' />
         </div>
+        <h1 id='sent' className='inactive'>
+          Message Sent
+        </h1>
         <form className='message-form' onSubmit={this.handleSubmit}>
           <label>
             Your Email:

@@ -1,5 +1,5 @@
 .contact-me {
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -58,4 +58,20 @@
 input[type='submit']:hover {
   background-color: white;
   color: #662d91;
+}
+
+#sent {
+  text-align: center;
+  width: 300px;
+  padding: 5px;
+  margin: 10px auto;
+  color: white;
+  transition: 1s all;
+}
+.active {
+  visibility: visible;
+}
+.inactive {
+  visibility: hidden;
+  opacity: 0;
 }
