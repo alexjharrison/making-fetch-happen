@@ -21,18 +21,18 @@ class Contact extends Component {
         console.log(res, status);
         this.setState({ email: '', message: '' });
         const sent = document.getElementById('sent');
-        sent.className = 'active';
+        sent.className = 'sent-active';
         setTimeout(() => {
-          sent.className = 'inactive';
+          sent.className = 'sent-inactive';
         }, 4000);
       })
       .catch(err => {
         console.log(err);
         this.setState({ email: '', message: '' });
         const sent = document.getElementById('sent');
-        sent.className = 'active';
+        sent.className = 'sent-active';
         setTimeout(() => {
-          sent.className = 'inactive';
+          sent.className = 'sent-inactive';
         }, 4000);
       });
   };
@@ -54,7 +54,7 @@ class Contact extends Component {
           </div>
           <img src='img/fetch_black.png' alt='logo' />
         </div>
-        <h1 id='sent' className='inactive'>
+        <h1 id='sent' className='sent-inactive'>
           Message Sent
         </h1>
         <form className='message-form' onSubmit={this.handleSubmit}>

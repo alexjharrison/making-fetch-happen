@@ -26,11 +26,8 @@ class App extends Component {
           <a href='/about' className='menu-item'>
             About
           </a>
-          <a
-            href='mailto:shelley@makingfetchhappenboston.com'
-            className='menu-item'
-          >
-            Email Me
+          <a href='/contact' className='menu-item'>
+            Contact
           </a>
         </Menu>
         <div className='App'>

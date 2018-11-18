@@ -68,10 +68,10 @@ input[type='submit']:hover {
   color: white;
   transition: 1s all;
 }
-.active {
+.sent-active {
   visibility: visible;
 }
-.inactive {
+.sent-inactive {
   visibility: hidden;
   opacity: 0;
 }
