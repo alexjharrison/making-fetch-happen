@@ -45,7 +45,7 @@ class Contact extends Component {
             <h3>Contact Me</h3>
             <br />
             <p>Shelley Harrison</p>
-            <a href='mailto=shelley@makingfetchhappenboston.com'>
+            <a href='mailto:shelley@makingfetchhappenboston.com'>
               Shelley@MakingFetchHappenBoston.com
             </a>
             <p>(781) 613-0539</p>
