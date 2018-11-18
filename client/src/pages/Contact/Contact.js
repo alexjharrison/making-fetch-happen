@@ -6,8 +6,24 @@ import './Contact.css';
 class Contact extends Component {
   state = {
     email: '',
-    message: ''
+    message: '',
+    style: {
+      opacity: .1,
+      transform: "translateY(30px)",
+      transition: "all 2s"
+    }
   };
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({
+        style: {
+          opacity: 1,
+          transform: "translateY(0px)",
+          transition: "all 900ms ease-out"
+        }
+      });
+    }, 100);
+  }
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
@@ -38,7 +54,7 @@ class Contact extends Component {
   };
   render() {
     return (
-      <React.Fragment>
+      <div style={this.state.style}>
         <Jumbotron img={'img/stay.jpg'} text={'Contact'} />
         <div className='contact-me'>
           <div className='contact-text'>
@@ -79,7 +95,7 @@ class Contact extends Component {
           </label>
           <input type='submit' value='Submit' />
         </form>
-      </React.Fragment>
+      </div>
     );
   }
 }

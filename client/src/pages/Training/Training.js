@@ -4,10 +4,27 @@ import { Link } from 'react-router-dom';
 import './Training.css';
 
 class Training extends Component {
-  state = {};
+  state = {
+    style: {
+      opacity: .1,
+      transform: "translateY(30px)",
+      transition: "all 2s"
+    }
+  };
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({
+        style: {
+          opacity: 1,
+          transform: "translateY(0px)",
+          transition: "all 900ms ease-out"
+        }
+      });
+    }, 100);
+  }
   render() {
     return (
-      <React.Fragment>
+      <div style={this.state.style}>
         <Jumbotron text='In-Home Training' img={'img/puppies.jpg'} />
         <div className='training'>
           <div className='intro'>
@@ -104,7 +121,7 @@ class Training extends Component {
             Sign Up
           </Link>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

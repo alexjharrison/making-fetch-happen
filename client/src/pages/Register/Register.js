@@ -9,7 +9,23 @@ class Register extends Component {
     phone: '',
     training: 'nosework',
     behaviors: '',
+    style: {
+      opacity: .1,
+      transform: "translateY(30px)",
+      transition: "all 2s"
+    }
   };
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({
+        style: {
+          opacity: 1,
+          transform: "translateY(0px)",
+          transition: "all 900ms ease-out"
+        }
+      });
+    }, 100);
+  }
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value })
     console.log(this.state);
@@ -27,7 +43,7 @@ class Register extends Component {
   }
   render() {
     return (
-      <div className="register">
+      <div style={this.state.style} className="register">
         <Jumbotron img={"img/mooputer.jpg"} text={"Register"} />
         <br />
         <form className='message-form' onSubmit={this.handleSubmit}>

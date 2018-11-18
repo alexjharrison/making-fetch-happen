@@ -6,10 +6,27 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './home.css';
 
 class Home extends Component {
-  state = {};
+  state = {
+    style: {
+      opacity: .1,
+      transform: "translateY(30px)",
+      transition: "all 2s"
+    }
+  };
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({
+        style: {
+          opacity: 1,
+          transform: "translateY(0px)",
+          transition: "all 900ms ease-out"
+        }
+      });
+    }, 100);
+  }
   render() {
     return (
-      <div className='home'>
+      <div style={this.state.style} className='home'>
         <Jumbotron
           img={'img/grass.jpg'}
           text={'Making Fetch Happen'}

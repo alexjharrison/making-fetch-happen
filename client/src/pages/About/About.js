@@ -3,10 +3,27 @@ import './About.css';
 import Jumbotron from '../../components/Jumbotron/Jumbotron';
 
 class About extends Component {
-  state = {};
+  state = {
+    style: {
+      opacity: .1,
+      transform: "translateY(30px)",
+      transition: "all 2s"
+    }
+  };
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({
+        style: {
+          opacity: 1,
+          transform: "translateY(0px)",
+          transition: "all 900ms ease-out"
+        }
+      });
+    }, 100);
+  }
   render() {
     return (
-      <React.Fragment>
+      <div style={this.state.style}>
         <Jumbotron img={'img/thethree.jpg'} text={'About'} />
         <div className='about'>
           <img
@@ -64,7 +81,7 @@ class About extends Component {
             </p>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
