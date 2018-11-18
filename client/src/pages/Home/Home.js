@@ -7,9 +7,6 @@ import './home.css';
 
 class Home extends Component {
   state = {};
-  componentDidMount() {
-    // console.log('hi');
-  }
   render() {
     return (
       <div className='home'>
